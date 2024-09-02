@@ -12,6 +12,7 @@ import java.util.Set;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@ToString
 public class Promocion {
     private Long id;
     private String denominacion;
@@ -22,7 +23,9 @@ public class Promocion {
     private String descripcionDescuento;
     private Double precioPromocional;
     private TipoPromocion tipoPromocion;
-    private Imagen promoImagen;
+
+    @Builder.Default
+    private Set<Imagen> imagenes = new HashSet<>();
 
     @Builder.Default
     private Set<Articulo> promociones = new HashSet<>();
