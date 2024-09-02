@@ -17,6 +17,6 @@ public class Promocion {
     private String descripcionDescuento;
     private Double precioPromocional;
     private TipoPromocion tipoPromocion;
-    private Imagen promoImagen;
+    private HashSet<Imagen> promoImagen;
     private HashSet<Articulo> promociones;
 }
