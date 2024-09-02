@@ -1,5 +1,9 @@
 package org.example;
 
+import lombok.*;
+
+@Builder
+@Data
 public class Articulo {
     private Long id;
     private String denominacion;
